@@ -60,6 +60,13 @@
             padding-top: 30px;
             margin-right: 60px;
         }
+        .pagar {
+            position: relative;
+            padding-top: 15px;
+            margin-left: 60px;
+            width:50%;
+        }
+
 
         .delete-btn {
             display: inline-block;
@@ -108,6 +115,11 @@
             display: flex;
             align-items: center;
         }
+        .total-price-final {
+            display: flex;
+            align-items: center;
+            width:50%;
+        }
 
         .quantity input {
             -webkit-appearance: none;
@@ -148,6 +160,32 @@
           background-color:lightgreen;
           border-color: lightgreen;
           color:white;
+        }
+        .finalizar{
+            font-family: "Roboto", sans-serif;
+            text-transform: uppercase;
+            outline: 0;
+            background: #4CAF50;
+            width: 100%;
+            border: 0;
+            padding: 15px;
+            color: white;
+            font-size: 14px;
+            -webkit-transition: all 0.3 ease;
+            transition: all 0.3 ease;
+            cursor: pointer;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        a:hover{
+            color: white;
+            text-decoration: none;
+        }
+        .finalizar:hover,.finalizar:active,.finalizar:focus {
+            background: #43A047;
+            color:white;
         }
     </style>
 </head>
@@ -250,6 +288,14 @@
                 <input value='1'>
             </div>
             <div class='total-price'>$149,99</div>
+        </div>
+        <span class='numeroProd'>Total a Pagar:</span>
+
+        <div class='item'>
+            <div class='total-price-final'>Valor: $2599,99</div>
+            <div class='pagar'>
+            <a href="index.php"><button class='finalizar'>Finalizar Compra</button></a>
+            </div>
         </div>
     </div>
 </body>
